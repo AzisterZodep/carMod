@@ -1,0 +1,35 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "garn_car_mod:call_car"
+    },
+    "title": {
+      "translate": "advancements.carfound.title"
+    },
+    "description": {
+      "translate": "advancements.carfound.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "carfound_0": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "minecraft:overworld"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "loot": [
+      "garn_car_mod:blocks/carloot"
+    ],
+    "recipes": [
+      "garn_car_mod:call_car_rescipe"
+    ]
+  }
+}

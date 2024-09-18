@@ -1,0 +1,26 @@
+{
+  "carnormal": {
+    "sounds": [
+      {
+        "name": "garn_car_mod:wow..._my_name_is_car...",
+        "stream": false
+      }
+    ]
+  },
+  "cardead": {
+    "sounds": [
+      {
+        "name": "garn_car_mod:car-scream-garn47-made-with-voicemod",
+        "stream": false
+      }
+    ]
+  },
+  "callcar": {
+    "sounds": [
+      {
+        "name": "garn_car_mod:carcall",
+        "stream": false
+      }
+    ]
+  }
+}
