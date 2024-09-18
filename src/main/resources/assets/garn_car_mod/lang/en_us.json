@@ -1,0 +1,10 @@
+{
+  "entity.garn_car_mod.car": "Car",
+  "subtitles.callcar": "",
+  "subtitles.cardead": "",
+  "item.garn_car_mod.car_spawn_egg": "Car Spawn Egg",
+  "item.garn_car_mod.call_car": "Call Car",
+  "advancements.carfound.title": "Carfound",
+  "advancements.carfound.descr": "find car",
+  "subtitles.carnormal": ""
+}
