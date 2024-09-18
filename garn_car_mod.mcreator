@@ -1,0 +1,217 @@
+{
+  "mod_elements": [
+    {
+      "name": "Car",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "car",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/garncarmod/client/renderer/CarRenderer.java",
+          "src/main/resources/assets/garn_car_mod/models/item/car_spawn_egg.json",
+          "src/main/java/net/mcreator/garncarmod/entity/CarEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "CallCar",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "call_car",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/garncarmod/item/CallCarItem.java",
+          "src/main/resources/assets/garn_car_mod/models/item/call_car.json"
+        ]
+      }
+    },
+    {
+      "name": "CallCarRescipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "call_car_rescipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/garn_car_mod/recipes/call_car_rescipe.json"
+        ]
+      }
+    },
+    {
+      "name": "CarEntityDies",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "car_entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/garncarmod/procedures/CarEntityDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Carloot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carloot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/garn_car_mod/loot_tables/blocks/carloot.json"
+        ]
+      }
+    },
+    {
+      "name": "Carfound",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carfound",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/garn_car_mod/advancements/carfound.json"
+        ]
+      }
+    },
+    {
+      "name": "CarOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "car_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/garncarmod/procedures/CarOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CallCarRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "call_car_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/garncarmod/procedures/CallCarRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "carsavepointX",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "carsavepointY",
+      "type": "number",
+      "scope": "map",
+      "value": "100.0"
+    },
+    {
+      "name": "carsavepointZ",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "carnormal",
+      "files": [
+        "wow..._my_name_is_car..."
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "cardead",
+      "files": [
+        "car-scream-garn47-made-with-voicemod"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "callcar",
+      "files": [
+        "carcall"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    }
+  ],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "entity.garn_car_mod.car": "Car",
+      "subtitles.callcar": "",
+      "subtitles.cardead": "",
+      "item.garn_car_mod.car_spawn_egg": "Car Spawn Egg",
+      "item.garn_car_mod.call_car": "Call Car",
+      "advancements.carfound.title": "Carfound",
+      "advancements.carfound.descr": "find car",
+      "subtitles.carnormal": ""
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "garn_car_mod",
+    "modName": "Garn47 Car Mod",
+    "version": "1.0.0",
+    "author": "AzisterZodep, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "modElementsPackage": "net.mcreator.garncarmod"
+  },
+  "mcreatorVersion": 202400232117
+}
